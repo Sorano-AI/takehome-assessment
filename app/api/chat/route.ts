@@ -9,7 +9,7 @@ export async function POST(req: Request) {
   const { messages } = await req.json();
 
   const result = streamText({
-    model: anthropic("claude-sonnet-4-20250514"),
+    model: anthropic("claude-haiku-4-5-20251001"),
     system: `You are a helpful AI assistant with access to tools. You can:
 1. Fetch weather forecasts for any location using the weather tool
 2. Run Python code for data analysis using the analyze tool
